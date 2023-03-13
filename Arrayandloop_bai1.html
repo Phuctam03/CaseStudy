@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+     <script>
+            let  a = [];
+            let  a1 = prompt("số lượng mảng a :");
+            let  b = [];
+            let sum = 0;
+
+            for (let i = 0; i < a1 ; i++) {
+                      a[i] = parseInt(prompt());
+            }
+            document.write(a+""+"<br/>");
+            for (let i = 0; i < a1 ; i++) {
+                    sum = sum +a[i] ;
+                b[i] = sum;
+            }
+            document.write(b.join(","));
+     </script>
+</body>
+</html>

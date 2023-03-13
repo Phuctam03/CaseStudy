@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    function Sapxep(array){
+        array.sort();
+    }
+
+    function COuntStringDiffent() {
+       let  Str = prompt("nhập chuỗi");
+        let s= [];
+        for (let i = 0; i <Str.length ; i++) {
+            s[i] =  Str.slice(i,i+1); // lấy các từ trong chuỗi đưa vào mảng ;
+        }
+        Sapxep(s);
+        for (let i = 1 ; i  >= s.length ; i--) {
+              if(s[i] === s[i-1]){
+                  s.splice(i - 1 ,1); //
+              }
+        }
+        document.writeln("số kí tự khác nhau trong Xâu :"+s.length);
+    }
+    COuntStringDiffent();
+
+
+
+
+      
+</script>
+
+</body>
+</html>

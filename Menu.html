@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let i ;
+    let Tongtien;
+   do {
+       alert("*******MENU******"+"<br>"+
+           "1.Cafe"+"<br/>"+
+           "2.Cam Vắt"+"<br/>"+
+           "3.Nước Ép ổi"+"<br/>"+
+           "4.Nước ép cà chưa"+"<br/>"+
+           "5.Nước lọc"+"<br/>"+
+           "6.Nước dừa"+"<br/>"+
+           "nhấn phím 7 thoát món"
+       );
+         i = +prompt("nhập lựa chọn");
+       switch (i) {
+           case 1 :
+               alert("Đơn giá của Cafe 5000k");
+               let nhapsoluong = prompt("nhập vào số lượng");
+               Tongtien = nhapsoluong * 5000;
+               alert("Tổng tiền là :"+Tongtien);
+               break;
+           case 2 :
+               alert("Đơn giá của CamVat 15000k");
+               let  nhapsl = prompt("nhập vào số lượng");
+               Tongtien = nhapsl * 15000;
+               alert("Tổng tiền là :"+Tongtien);
+               break;
+           case 3 :
+               alert("Đơn giá của nuoc ep ca rot 15000k");
+               let  nhapsl1 = prompt("nhập vào số lượng");
+               Tongtien = nhapsl1 * 15000;
+               alert("Tổng tiền là :"+Tongtien);
+               break;
+           case 4 :
+               alert("Đơn giá của nuoc ep ca chua 8000k");
+               let nhapsl2 = prompt("nhập vào số lượng");
+               Tongtien = nhapsl2 * 8000;
+               alert("Tổng tiền là :"+Tongtien);
+               break;
+           case 5 :
+               alert("Đơn giá của nuoc loc 6000k");
+               let nhapsl3 = prompt("nhập vào số lượng");
+               Tongtien = nhapsl3 * 5000;
+               alert("Tổng tiền là :"+Tongtien);
+               break;
+           case 6 :
+               alert("Đơn giá của nuoc dua  25000k");
+               let nhapsl4 = prompt("nhập vào số lượng");
+               Tongtien = nhapsl4 * 25000;
+               alert("Tổng tiền là :"+Tongtien);
+               break;
+       }
+   }while (i !== 7);
+
+
+
+
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let  s = prompt("nhập chuỗi 1 ");
+    let  s2 = prompt("nhập chuỗi 2 ");
+    let Arraystr1 =[];
+    let Arraystr2 = [];
+    let count = 0 ;
+
+    for (let i = 0; i < s.length ; i++) {
+        Arraystr1[i]= s.slice(i,i+1);
+    }
+    document.writeln(Arraystr1+"<br/>");
+    for (let i = 0; i < s2.length ; i++) {
+        Arraystr2[i] = s2.slice(i,i+1);
+    }
+    document.writeln(Arraystr2+"<br/>");
+
+
+    for (let i = 0; i <Arraystr1.length ; i++) {
+        for (let j = 0; j <Arraystr2.length ; j++) {
+            if(Arraystr1[i] === Arraystr2[j]){
+                      Arraystr1.splice(i,1);
+                      Arraystr2.splice(j,1);
+                      document.writeln(Arraystr1+"<br/>");
+                document.writeln(Arraystr2+"<br/>");
+                i--;
+                j--;
+                count++;
+            }
+        }
+    }
+    document.writeln("Số lượng kí tự chung của 2 Xâu là :"+count);
+
+    
+</script>
+
+</body>
+</html>

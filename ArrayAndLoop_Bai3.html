@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+         let a =[];
+         let b = [];
+         let l=prompt("Số lượng mảng A");
+         for (let i = 0; i <l ; i++) {
+             a[i] = parseInt(prompt("nhập tử"));
+             b[i] =parseInt(prompt("Nhập mẫu"));
+         }
+         let max = a[0] / b[0];
+         let index;
+         let i ;
+         for ( i = 0; i < l ; i++) {
+                if(max <= (a[i]/b[i]) ){
+                    max = (a[i]/b[i]);
+                     index=i;
+                }
+         }
+         document.write("Số lớn nhất"+max+"<br/>"+"Vị trí"+index);
+</script>
+
+</body>
+</html>

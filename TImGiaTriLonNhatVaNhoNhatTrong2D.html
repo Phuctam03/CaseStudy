@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    let Array2d = [
+        [1,3,5,7],
+        [4,6,7,13],
+        [6,7,8,9,]
+    ]
+       function NUmberMax(Array2D){
+           let max = Array2D[0][0];
+           for (let i = 0; i <Array2D.length ; i++) {
+               for (let j = 0; j <Array2D[i].length ; j++) {
+                   if(Array2D[i][j] > max){
+                       max = Array2D[i][j];
+                   }
+               }
+
+           }
+           return max;
+       }
+       function NumberMin(Array2D){
+           let min = Array2D[0][0];
+           for (let i = 0; i <Array2D.length ; i++) {
+               for (let j = 0; j <Array2D[i].length ; j++) {
+                   if(Array2D[i][j] < min){
+                       min = Array2D[i][j];
+                   }
+               }
+           }
+           return min;
+       }
+    document.writeln(NUmberMax(Array2d));
+    document.writeln(NumberMin(Array2d));
+
+
+</script>
+
+</body>
+</html>

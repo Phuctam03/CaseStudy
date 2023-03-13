@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let luongNhanVien = parseInt(prompt("nhập lương nhân viên :"));
+    let thueThuNhap;
+    let luongRong;
+
+    if( luongNhanVien  === 15000000){
+         thueThuNhap = luongNhanVien * 0.2;
+    }else if (luongNhanVien > 7000000 && luongNhanVien < 1500000){
+           thueThuNhap = luongNhanVien * 0.1;
+    }else {
+         thueThuNhap = luongNhanVien * 0.05;
+    }
+      luongRong = luongNhanVien - thueThuNhap;
+    alert("Thuế thu nhập :"+thueThuNhap);
+    alert("Lương ròng :"+luongRong);
+
+</script>
+
+</body>
+</html>

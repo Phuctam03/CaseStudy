@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>QUẢN LÝ SINH VIÊN</title>
+</head>
+<body>
+<div >
+    <H3 style="color: red">Thông tin sinh viên</H3>
+    <table   style="float: left"  cellspacing="0" cellpadding="5" >
+        <tr>
+            <td><label style="color: blue">Mã số sinh viên</label></td>
+            <td><input type="text" id="MSSV" /></td>
+        </tr>
+
+        <tr>
+            <td>
+                <label style=" color: blue">Họ Và tên</label></td>
+            <td><input type="text"  id="fullname" />
+            </td>
+        </tr>
+
+
+        <tr>
+            <td>
+                <label style=" color: blue">lớp</label></td>
+            <td><input type="text"  id="class" />
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label style=" color: blue">email</label></td>
+            <td><input type="email"  id="email1" />
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label style=" color: blue">Ngày sinh</label></td>
+            <td><input type="text"  id="Date" />
+            </td>
+        </tr>
+
+<!--        <tr>-->
+<!--            <td>-->
+<!--                <label style=" color: blue">Giới tính</label></td>-->
+<!--            <td><input type="radio"  id="male" name="Gender" value="1" />Nam-->
+<!--                <input  type="radio"  id="female" name="Gender" value="2" />Nữ-->
+<!--            </td>-->
+<!--        </tr>-->
+
+        <tr>
+            <td>
+                <button id="bt"; style="width: 100px "  onclick="add()">Thêm</button> <button  id="fix" style="width: 100px" onclick="Edit()">Sửa</button>
+            </td>
+        </tr>
+             <td>
+                 <input id="find" ><button onclick="TimkiemMaSinhvien()">Tìm kiếm</button>
+                 <button onclick="Delete()">XÓa</button>
+             </td>
+    </table>
+</div>
+<div  style="float: right ;width: 1000px" >
+    <table id="list-student" border="1" cellpadding="5" cellspacing="0" >
+
+    </table>
+</div>
+<script  src="students.js"></script>
+
+
+
+
+</body>
+</html>

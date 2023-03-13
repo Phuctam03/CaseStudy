@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+     function DaoNguocChuoi(Str){
+         Str = prompt("nhập chuỗi 1 ");
+         let s = [];
+         s= Str.split(" ");
+         let kq= "";
+         for (let i = s.length -  1; i >= 0  ; i--) {
+             kq += s[i].trim() +" "; // bỏ các khoẳng trắng thừa;
+         }
+         document.write("Chuỗi Đảo ngược"+kq.trim()+"<br/>");
+     }
+     function ChuanHoaChuoi(Str){
+         Str = prompt("nhập chuỗi 2 ");
+         let s = [];
+         s = Str.split(" ");
+         let kq = "", temp;
+         for (let i = 0; i <s.length ; i++) {
+             temp = s[i].trim().toLowerCase(); // lấy 1 từ trong chuỗi;
+             // XÓa khoảng trắng trước 2 đầu, chuyển chữ thường;
+             // document.write(temp+"<br/>");
+             if(temp !== ""){ // viết Hoa kí tự đầu từ;
+                 temp = temp.substr(0,1).toUpperCase() + temp.substr(1);// inm hoa chữ cái đầu tiên; (SubStr) what ?
+                 kq += temp+ " " ;
+             }
+         }
+         document.write("Chuỗi sau khi chuẩn hóa :"+kq.trim()+"<br/>");
+         // console.log("Chuỗi sau khi chuẩn hóa :"+kq.trim());
+     }
+     function timTUDaiNhatTrongChuoi(Str){
+        Str = prompt("nhập chuỗi 3 :");
+        let s = [];
+        let tudainhat = "";
+        s = Str.split(" ");
+         for (let i = 0; i <s.length ; i++) {
+             if(s[i].length > tudainhat.length){
+                 tudainhat = s[i];
+             }
+         }
+         document.write(" từ dài nhất trong chuỗi :"+tudainhat);
+     }
+
+
+
+     function main(){
+         let str ;
+        // DaoNguocChuoi(str);
+        ChuanHoaChuoi(str);
+        // timTUDaiNhatTrongChuoi(str);
+
+     }
+     main();
+
+
+       
+
+
+</script>
+
+</body>
+</html>

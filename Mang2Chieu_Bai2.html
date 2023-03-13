@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <script>
+        let m = +prompt("nhập số hàng");
+        let n = +prompt("nhập số cột");
+        let Matran  =[];
+        let count = 0 ;
+
+        for (let i = 0; i <m ; i++) {
+              Matran[i] = [];
+            for (let j = 0; j <n ; j++) {
+                Matran[i][j] = +prompt("nhập vào các số");
+            }
+        }
+
+        for (let i = 0; i <m ; i++) {
+            for (let j = 0; j <n ; j++) {
+                if(KitrasoNguyento(Matran[i][j]) === true){
+                    count++;
+                    document.writeln(Matran[i][j]+ " "+"<br/>" );
+                }
+            }
+        }
+           document.writeln("Số lượng nguyên tố trong mảng"+count);
+             function KitrasoNguyento(n) {
+                 if (n < 2) {
+                     return false;
+                 } else {
+                     for (let i = 2; i < Math.sqrt(n); i++) {
+                         if (n % i === 0) {
+                             return false;
+                         } else {
+                             return true;
+                         }
+
+                     }
+                 }
+             }
+    </script>
+
+</body>
+</html>
